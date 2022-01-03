@@ -1,0 +1,137 @@
+/*
+Theme Name: Targye
+Text Domain: Targye
+Version: 1.0.0
+Description: Artist theme for RichardColombel.com
+Author: Arkalys
+Author URI: http://www.arkalysapps.com
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	margin: 0;
+	font-family: "Mulish", sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 16px;
+	overflow-x: hidden;
+    color: var(--text);
+}
+:root {
+    /* Colors */
+    --black-thin: rgba(0, 0, 0, 0.1);
+    --text: #181818;
+    --sub-text: #656565;
+
+    /* Utils */
+	--simple-boxshadow: 0 0 10px 0px rgb(0 0 0 / 30%);
+    --sidebar-width: 300px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Home Video */
+.home-video {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    object-fit: fill;
+    z-index: 0;
+}
+
+.video-overlay {
+    position: fixed;
+    z-index: 1;
+    background: #000;
+    opacity: .2;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    background: #fff;
+    width: var(--sidebar-width);
+    height: 100vh;
+    z-index: 999;
+}
+
+.sidebar .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.sidebar .main-menu,
+.sidebar .copyright {
+    padding: 0px 30px;
+}
+
+.sidebar .main-menu li {
+    border-bottom: 1px solid var(--black-thin);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--sub-text);
+    cursor: pointer;
+}
+
+.sidebar .main-menu li a {
+    color: var(--sub-text);
+    transition: color .3s ease;
+}
+
+.sidebar .main-menu li:hover a {
+    color: var(--text);
+}
+
+.sidebar .main-menu li.current_page_item a {
+    color: var(--text);
+}
+
+.sidebar .copyright {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sidebar .copyright div:first-child {
+    margin-bottom: 15px;
+}
+
+/* Default */
+.content-wrapper {
+    position: absolute;
+    width: calc(100vw - var(--sidebar-width) - 100px);
+    left: var(--sidebar-width);
+    padding: 50px;
+}
