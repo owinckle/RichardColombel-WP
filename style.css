@@ -109,6 +109,8 @@ ul {
 .sidebar .main-menu li a {
     color: var(--sub-text);
     transition: color .3s ease;
+    display: inherit;
+    width: 100%;
 }
 
 .sidebar .main-menu li:hover a {
