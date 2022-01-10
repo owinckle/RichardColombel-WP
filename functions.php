@@ -1,12 +1,5 @@
 <?php
 
-// Add dynamic title tag support
-function targye_theme_support() {
-    add_theme_support("title-tag");
-}
-
-add_action("after_theme_setup", "targye_theme_support");
-
 // Register styles
 function targye_register_styles() {
     $version = wp_get_theme()->get("Version");
