@@ -210,3 +210,23 @@ ul {
     top: -42%;
     transform: rotate(45deg);
 }
+
+/* Home */
+.content-wrapper.home-wrapper {
+    z-index: 1;
+    height: 85px;
+    background: rgba(255, 255, 255, .8);
+    bottom: 50px;
+    right: 50px;
+    left: unset;
+    padding: 15px;
+    width: 50%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /*IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera */
+.content-wrapper.home-wrapper::-webkit-scrollbar {
+    display: none;
+}
