@@ -213,14 +213,13 @@ ul {
 
 /* Home */
 .content-wrapper.home-wrapper {
-    z-index: 1;
-    height: 85px;
-    background: rgba(255, 255, 255, .8);
+    height: 12vw;
+    width: 12vw;
+    background: rgba(255, 255, 255, .6);
     bottom: 50px;
     right: 50px;
     left: unset;
     padding: 15px;
-    width: 50%;
     overflow-y: scroll;
     -ms-overflow-style: none; /*IE and Edge */
     scrollbar-width: none; /* Firefox */
