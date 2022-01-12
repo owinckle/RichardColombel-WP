@@ -1,7 +1,7 @@
 /*
 Theme Name: Targye
 Text Domain: Targye
-Version: 1.0.0
+Version: 1.0.1
 Description: Artist theme for RichardColombel.com
 Author: Arkalys
 Author URI: http://www.arkalysapps.com
@@ -172,6 +172,18 @@ ul {
     }
 }
 
+@media only screen and (max-width: 640px) {
+    .content-wrapper {
+        padding: 20px;
+        width: calc(100vw - 40px);
+    }
+
+    figcaption {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
 .burger {
     position: fixed;
     height: 25px;
@@ -215,7 +227,7 @@ ul {
 .content-wrapper.home-wrapper {
     height: 12vw;
     width: 12vw;
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, .2);
     bottom: 50px;
     right: 50px;
     left: unset;
@@ -223,6 +235,7 @@ ul {
     overflow-y: scroll;
     -ms-overflow-style: none; /*IE and Edge */
     scrollbar-width: none; /* Firefox */
+    z-index: 1;
 }
 
 /* Hide scrollbar for Chrome, Safari, Opera */
