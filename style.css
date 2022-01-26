@@ -261,3 +261,8 @@ ul {
     top: -42%;
     transform: rotate(45deg);
 }
+
+/* Forms */
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium, div.wpforms-container-full .wpforms-form select.wpforms-field-medium, div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100% !important;
+}
